@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!------- Bootstrap CSS --------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <!----- Bootstrap JS ------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body style="background-color: rgb(147, 147, 147);">
+  <!------ Header ------->
+  <header class="sticky-top">
+    <!---- Header Navigation ------>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-5 pt-2 pb-2">
+      <div class="container-fluid">
+        <div class="navbar-brand" style="margin-left: 15px;"><img src="../bilder/logo.png" alt=""></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link p-5 pt-2 pb-2" href="#">Startseite</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-5 pt-2 pb-2" href="#">Über mich</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-5 pt-2 pb-2" href="#">Skill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-5 pt-2 pb-2" href="#">Kontakt</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!------- Sidebar ------->
+  <div>
+    
+    <div class="bg-dark offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="bg-light" style="width: fit-content;">
+          &#8981; <input style="width: 300px;" type="search" placeholder="Suchen...">
+        </div>
+        <nav class="d-flex flex-wrap align-content-center" style="height:90vh; line-height: 300px;">
+
+          <div class="container-fluid bg-dark navbar-dark" style="font-size: 30px;">
+            <!-- Links -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">&#x2709; Message</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">&#9881; Einstellungen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">&#128100; Ausloggen</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div>
+    <!------ Sidebar Button -------->
+    <a class="navbar-toggle" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+      aria-controls="offcanvasExample">
+      <img class="m-2" src="../bilder/justify.svg" alt="" style="width: 1.8rem;">
+    </a>
+    <!----- Titel ------->
+    <h1 style="text-align: center;">Meine Seite</h1>
+  </div>
+  <!------ Main ------>
+  <main class="container-fluid mt-5 row">
+    <!----- Collapse ------->
+    <div class="col-sm-6 d-flex justify-content-center flex-wrap">
+      <!---- Col-Card Buttons ----->
+      <p>
+        <a class="btn btn-primary m-5 mt-2 mb-2" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+          aria-expanded="false" aria-controls="multiCollapseExample1">Secial 1</a>
+        <button class="btn btn-danger m-5 mt-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2"
+          aria-expanded="false" aria-controls="multiCollapseExample2">Special 2</button>
+        <button class="btn btn-secondary m-5 mt-2 mb-2" type="button" data-bs-toggle="collapse"
+          data-bs-target="#multiCollapseExample3" aria-expanded="false"
+          aria-controls="multiCollapseExample1 multiCollapseExample2">Special 3</button>
+      </p>
+      <!---- Col-Card 1 ----->
+      <div class="row ">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body bg-info">
+              Some placeholder content for the first collapse component of this multi-collapse example. This panel is
+              hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </div>
+        <!---- Col-Card 1 ----->
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body bg-warning">
+              Some placeholder content for the second collapse component of this multi-collapse example. This panel is
+              hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </div>
+        <!---- Col-Card 1 ----->
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample3">
+            <div class="card card-body bg-light">
+              Some placeholder content for the second collapse component of this multi-collapse example. This panel is
+              hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---- Accordion ---->
+    <div class="col-sm-6">
+      <div id="accordion">
+        <!------ Card 1 -------->
+        <div class="card">
+          <div class="card-header bg-primary">
+            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+              Angebot 1
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+            <div class="card-body bg-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sequi deleniti saepe corporis tempora,
+              impedit nemo nobis animi doloremque aut error dolore cum molestiae ratione quis labore quibusdam
+              aspernatur hic laboriosam architecto id at odit voluptatibus quae? Quos magni sit nemo ex quisquam!
+              Similique eligendi quas consectetur vero animi quaerat asperiores natus assumenda excepturi molestias.
+              Quidem ipsa eos quibusdam cum repudiandae odit nemo. Laborum exercitationem hic maiores omnis et sit
+              cupiditate vitae possimus perferendis, enim dolor. Reprehenderit consequuntur officia placeat minus?
+              Nostrum fugiat nobis repellat, ipsam quod fugit perspiciatis corporis qui molestiae neque atque, obcaecati
+              odit reiciendis nemo ad libero?
+            </div>
+          </div>
+        </div>
+        <!------ Card 2 -------->
+        <div class="card ">
+          <div class="card-header  bg-danger">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+              Angebot 2
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body   bg-warning">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur, eligendi sequi corporis placeat
+              officiis reprehenderit fuga iusto possimus non distinctio dolore hic commodi aut sed earum eius ut quas
+              reiciendis suscipit aliquid maiores voluptatum. Nulla quidem animi unde harum illo, non illum, beatae
+              error ullam necessitatibus consequatur exercitationem ipsum corporis atque sint modi iste obcaecati
+              mollitia incidunt asperiores eos sapiente vel accusantium possimus? Soluta iste eius praesentium tenetur,
+              incidunt fugiat at consequuntur officia eligendi deleniti perferendis quasi dicta, accusamus odit voluptas
+              laborum atque omnis animi delectus harum, sit sapiente eaque. Commodi sunt esse eaque? Unde mollitia nulla
+              adipisci blanditiis.
+            </div>
+          </div>
+        </div>
+        <!------ Card 3 -------->
+        <div class="card">
+          <div class="card-header bg-secondary">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+              angebot 3
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body bg-light">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores dolor eaque quod, magnam veritatis
+              animi explicabo, odio consequuntur officiis quos dolorum, sed expedita impedit ullam vitae ex doloribus
+              dicta sunt.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---- Icons ----->
+    <div class="mt-5 mb-5">
+      <!------ Icons oben ------->
+      <div class="row mt-5">
+        <div class="col"><img src="../bilder/icon-1.png" alt=""></div>
+        <div class="col"><img src="../bilder/icon-2.png" alt=""></div>
+        <div class="col"><img src="../bilder/icon-3.png" alt=""></div>
+        <div class="col"><img src="../bilder/icon-4.png" alt=""></div>
+        <div class="col"><img src="../bilder/icon-5.png" alt=""></div>
+      </div>
+      <!------ Icons unten ------->
+      <div class="row mt-5">
+        <div class="col"><img src="../bilder/icon-6.png" alt=""></div>
+        <div class="col"><img src="../bilder/icon-7.png" alt=""></div>
+        <div class="col"><img src="../bilder/icon-8.png" alt=""></div>
+        <div class="col"><img src="../bilder/icon-9.png" alt=""></div>
+        <div class="col"><img src="../bilder/icon-10.png" alt=""></div>
+      </div>
+    </div>
+  </main>
+  <!----- Footer ------->
+  <footer class="mt-5 position-relative">
+    <!----- Social Media Icons ------>
+    <div class="d-flex justify-content-center fixed-bottom bg-dark mt-5">
+    <img class="bg-light m-2" src="../bilder/insta.png" alt="">
+    <img class="bg-light m-2" src="../bilder/facebook.png" alt="">
+    <img class="bg-light m-2" src="../bilder/twitter.png" alt="">
+  </div>
+  </footer>
+</body>
+
+</html>
